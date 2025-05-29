@@ -1,0 +1,16 @@
+{
+	"name": "screcel",
+	"module": "src/main.ts",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"trustedDependencies": ["@biomejs/biome"],
+	"scripts": {
+		"fmt": "biome check --write ."
+	}
+}
