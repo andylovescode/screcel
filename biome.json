@@ -19,7 +19,35 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"style": {
+				"useNamingConvention": {
+					"options": {
+						"conventions": [
+							{
+								"formats": ["snake_case"],
+								"selector": {
+									"kind": "variable"
+								}
+							},
+							{
+								"formats": ["snake_case"],
+								"selector": {
+									"kind": "function"
+								}
+							},
+							{
+								"formats": ["PascalCase"],
+								"selector": {
+									"kind": "typeLike"
+								}
+							}
+						]
+					},
+					"fix": "safe",
+					"level": "warn"
+				}
+			}
 		}
 	},
 	"javascript": {
