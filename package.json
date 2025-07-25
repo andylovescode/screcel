@@ -1,7 +1,6 @@
 {
 	"name": "screcel",
 	"module": "src/main.ts",
-	"type": "module",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@types/bun": "latest"
@@ -9,8 +8,14 @@
 	"peerDependencies": {
 		"typescript": "^5.0.0"
 	},
-	"trustedDependencies": ["@biomejs/biome"],
 	"scripts": {
-		"fmt": "biome check --write ."
+		"fmt": "biome check --write .",
+		"start": "bun run src/main.ts",
+		"dev": "bun run --hot src/main.ts"
+	},
+	"trustedDependencies": ["@biomejs/biome"],
+	"type": "module",
+	"dependencies": {
+		"valibot": "^1.1.0"
 	}
 }

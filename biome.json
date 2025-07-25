@@ -21,29 +21,13 @@
 		"rules": {
 			"recommended": true,
 			"style": {
-				"useNamingConvention": {
-					"options": {
-						"conventions": [
-							{
-								"formats": ["snake_case"],
-								"selector": {
-									"kind": "variable"
-								}
-							},
-							{
-								"formats": ["snake_case"],
-								"selector": {
-									"kind": "function"
-								}
-							},
-							{
-								"formats": ["PascalCase"],
-								"selector": {
-									"kind": "typeLike"
-								}
-							}
-						]
-					},
+				"useTemplate": {
+					"fix": "safe",
+					"level": "warn"
+				}
+			},
+			"correctness": {
+				"noSwitchDeclarations": {
 					"fix": "safe",
 					"level": "warn"
 				}
